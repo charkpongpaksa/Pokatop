@@ -146,8 +146,8 @@ class MainActivity : AppCompatActivity(), SensorEventListener {
     override fun onPause() {
         sensorManager.unregisterListener(this)
         handler.removeCallbacks(ticker)
-        alertPlayer.stop()
         if (!isChangingConfigurations) {
+            alertPlayer.stop()
             val before = session.state.distractions
             session.onLeave(SystemClock.elapsedRealtime())
             if (session.state.distractions > before) Log.d(TAG, "distraction reason=leave")

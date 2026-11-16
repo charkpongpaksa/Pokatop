@@ -16,10 +16,9 @@ fun soundRes(key: String): Int = when (key) {
     else -> R.raw.chime
 }
 
-class AlertPlayer(private val context: Context) {
+class AlertPlayer(context: Context) {
 
-    private var player: MediaPlayer? = null
-    private var vibrator: Vibrator? = null
+    private val context: Context = context.applicationContext
 
     fun play(soundKey: String, vibrate: Boolean) {
         start(soundKey, AudioAttributes.USAGE_ALARM)
@@ -87,6 +86,8 @@ class AlertPlayer(private val context: Context) {
 
     companion object {
         private const val TAG = "Pokatop"
+        private var player: MediaPlayer? = null
+        private var vibrator: Vibrator? = null
         private val PATTERN = longArrayOf(0, 400, 200, 400)
     }
 }

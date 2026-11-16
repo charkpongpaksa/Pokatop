@@ -114,6 +114,7 @@
     <string name="deleted_all">All history deleted</string>
     <string name="history_empty_title">No history yet</string>
     <string name="history_empty_body">Flip your phone on the timer screen to start your first session</string>
+    <string name="history_empty_plain_body">Tap Start on the timer screen to begin your first session</string>
     <string name="history_focus_fmt">Focus %s</string>
     <string name="history_when_fmt">%1$s %2$s – %3$s</string>
     <string name="today">Today</string>

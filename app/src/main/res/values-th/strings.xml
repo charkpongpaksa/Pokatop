@@ -30,7 +30,7 @@
     <string name="status_grace_body">ถ้าเกิน 10 วินาทีจะหยุดเวลาและนับว่าเสียสมาธิ</string>
     <string name="status_paused">หยุดชั่วคราว</string>
     <string name="status_paused_flip_body">คว่ำมือถือเพื่ออ่านต่อจากเวลาเดิม</string>
-    <string name="status_paused_tap_body">กด "ทำต่อ" เพื่อนับต่อจากเวลาเดิม</string>
+    <string name="status_paused_tap_body">กด “ทำต่อ” เพื่อนับต่อจากเวลาเดิม</string>
     <string name="status_short_break">พักสั้น</string>
     <string name="status_long_break">พักยาว</string>
     <string name="status_break_body">ลุกยืดเส้นได้เลย จะมีเสียงเตือนเมื่อหมดเวลาพัก</string>
@@ -52,7 +52,7 @@
     <string name="alert_long_break_body">ได้พักยาว %d นาที</string>
     <string name="alert_break_done_title">หมดเวลาพัก</string>
     <string name="alert_break_done_flip_body">หยิบแล้วคว่ำมือถือเพื่อเริ่มรอบถัดไป</string>
-    <string name="alert_break_done_plain_body">กด "เริ่มรอบถัดไป" เมื่อพร้อม</string>
+    <string name="alert_break_done_plain_body">กด “เริ่มรอบถัดไป” เมื่อพร้อม</string>
 
     <string name="exit_title">ออกจากแอป?</string>
     <string name="exit_body">ยังมีการอ่านค้างอยู่ ถ้าออกโดยเก็บไว้ กลับมาแล้วอ่านต่อจากเวลาเดิมได้</string>
@@ -114,6 +114,7 @@
     <string name="deleted_all">ลบประวัติทั้งหมดแล้ว</string>
     <string name="history_empty_title">ยังไม่มีประวัติ</string>
     <string name="history_empty_body">คว่ำมือถือที่หน้าจับเวลาเพื่อเริ่มอ่านครั้งแรก</string>
+    <string name="history_empty_plain_body">กด “เริ่ม” ที่หน้าจับเวลาเพื่อเริ่มอ่านครั้งแรก</string>
     <string name="history_focus_fmt">อ่าน %s</string>
     <string name="history_when_fmt">%1$s %2$s – %3$s</string>
     <string name="today">วันนี้</string>

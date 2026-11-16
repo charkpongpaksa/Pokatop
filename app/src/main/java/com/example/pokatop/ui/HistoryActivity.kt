@@ -1,12 +1,16 @@
 package com.example.pokatop.ui
 
+import android.hardware.Sensor
+import android.hardware.SensorManager
 import android.os.Bundle
 import android.view.View
+import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.RecyclerView
 import com.example.pokatop.R
 import com.example.pokatop.data.PokatopDbHelper
+import com.example.pokatop.data.Prefs
 import com.example.pokatop.data.SessionRecord
 import com.google.android.material.appbar.MaterialToolbar
 
@@ -51,6 +55,10 @@ class HistoryActivity : AppCompatActivity() {
     private fun reload() {
         val rows = db.getSessions()
         adapter.submit(rows)
+        val hasSensor = getSystemService(SensorManager::class.java).getDefaultSensor(Sensor.TYPE_ACCELEROMETER) != null
+        findViewById<TextView>(R.id.empty_body).setText(
+            if (Prefs(this).currentConfig(hasSensor).detection) R.string.history_empty_body else R.string.history_empty_plain_body
+        )
         emptyView.visibility = if (rows.isEmpty()) View.VISIBLE else View.GONE
         toolbar.menu.findItem(R.id.action_delete_all)?.isVisible = rows.isNotEmpty()
     }
