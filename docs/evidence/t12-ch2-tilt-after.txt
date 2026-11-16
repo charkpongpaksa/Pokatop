@@ -1,0 +1,6 @@
+# AFTER (FilteredFlipDetector: low-pass + hysteresis -8/-6 + hold 800/300 ms): face-down then tilted 25 deg stays FACE_DOWN, no distraction
+## app log (tag Pokatop)
+--------- beginning of main
+11-17 01:49:13.467 D/Pokatop (11045): posture=FACE_DOWN
+11-17 01:49:13.467 D/Pokatop (11045): phase=FOCUSING
+## system: face-down detector and activity pause

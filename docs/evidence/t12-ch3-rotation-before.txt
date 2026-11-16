@@ -1,0 +1,8 @@
+# BEFORE (tag before-rotation-fix): MainActivityRotationTest — session in GRACE, rotate to landscape and back
+# onPause called session.onLeave() even when isChangingConfigurations was true
+com.example.pokatop.ui.MainActivityRotationTest > rotatingKeepsSessionWithoutDistraction[Pixel_8(AVD) - 17] [31mFAILED [0m
+	org.junit.ComparisonFailure: expected:<[0] ครั้ง> but was:<[1] ครั้ง>
+Execute com.example.pokatop.ui.MainActivityRotationTest.rotatingKeepsSessionWithoutDistraction: FAILED
+org.junit.ComparisonFailure: org.junit.ComparisonFailure: expected:<[0] ครั้ง> but was:<[1] ครั้ง>
+at com.example.pokatop.ui.MainActivityRotationTest.rotatingKeepsSessionWithoutDistraction$lambda$1$lambda$0(MainActivityRotationTest.kt:53)
+at com.example.pokatop.ui.MainActivityRotationTest$$ExternalSyntheticLambda0.perform(D8$$SyntheticClass:0)

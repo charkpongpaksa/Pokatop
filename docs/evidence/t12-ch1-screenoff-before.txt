@@ -1,0 +1,25 @@
+# BEFORE (build before the fix: FLAG_KEEP_SCREEN_ON only while a session runs)
+# Recorded 2026-11-17 00:50 on the Pixel_8 emulator during development (Task 6), copied from logcat.
+# Scenario: app freshly opened in WAITING, phone flipped face-down.
+# Note: a re-run at 01:47 with the same build did NOT reproduce it — once the app has seen the flip it turns
+# FLAG_KEEP_SCREEN_ON on within ~0.2 s. The bug appears when Android's face-down handling turns the screen off
+# before the app has processed the flip (here: right after launch). The fix removes that window entirely.
+
+## system (logcat main)
+11-17 00:50:10.618 I/DisplayPowerController[0](  670): Blocking screen off
+11-17 00:50:10.619 D/WindowManager(  670): Add SleepToken: tag=Display-off, displayId=0
+11-17 00:50:10.682 D/ActivityTaskManager(  670): Top Process State changed to PROCESS_STATE_TOP_SLEEPING
+## activity lifecycle (logcat events)
+11-17 00:50:10.670 I/wm_pause_activity(  670): [0,120746714,com.example.pokatop/.ui.MainActivity,userLeaving=false,sleep]
+11-17 00:50:10.956 I/screen_toggled(  670): 0
+11-17 00:50:11.431 I/wm_on_paused_called(19217): [120746714,com.example.pokatop.ui.MainActivity,performPause,43]
+11-17 00:50:11.439 I/user_activity_timeout_override(  670): 10000
+## app log (tag Pokatop)
+11-17 00:50:11.297 D/Pokatop : posture=FACE_DOWN
+11-17 00:50:11.298 D/Pokatop : phase=FOCUSING
+11-17 00:50:11.410 D/Pokatop : distraction reason=leave
+## the same kind of event earlier (00:31:59): PowerManagerService "onFlip(): Face down." followed 0.4 s later by "distraction reason=leave"
+
+## re-run 01:47 (not reproduced)
+11-17 01:47:28.627 D/Pokatop (10280): posture=FACE_DOWN
+11-17 01:47:28.627 D/Pokatop (10280): phase=FOCUSING

@@ -1,0 +1,15 @@
+<resources>
+    <style name="Base.Theme.Pokatop" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/pk_pastel</item>
+        <item name="colorOnPrimary">@color/pk_navy</item>
+        <item name="colorSecondary">@color/pk_mint</item>
+        <item name="colorOnSecondary">@color/pk_on_mint</item>
+        <item name="android:colorBackground">@color/pk_bg</item>
+        <item name="colorSurface">@color/pk_card</item>
+        <item name="colorOnSurface">@color/pk_text</item>
+        <item name="colorOnBackground">@color/pk_text</item>
+        <item name="android:statusBarColor">@color/pk_bg</item>
+        <item name="android:navigationBarColor">@color/pk_bg</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+</resources>

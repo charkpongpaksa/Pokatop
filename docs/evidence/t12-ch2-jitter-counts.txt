@@ -1,0 +1,1 @@
+jitter 5 s @50 Hz, z = -9.6 ± 1.2: naive posture changes = 104, filtered posture changes = 0

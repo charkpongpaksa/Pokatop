@@ -1,0 +1,10 @@
+# BEFORE (tag before-filter, NaiveFlipDetector z<=-9.0): phone face-down then resting tilted 25 deg (z=-8.88) is read as LIFTED -> GRACE -> distraction after 10 s
+## app log (tag Pokatop)
+--------- beginning of main
+11-17 01:48:06.186 D/Pokatop (10574): posture=FACE_DOWN
+11-17 01:48:06.186 D/Pokatop (10574): phase=FOCUSING
+11-17 01:48:14.267 D/Pokatop (10574): posture=LIFTED
+11-17 01:48:14.267 D/Pokatop (10574): phase=GRACE
+11-17 01:48:24.442 D/Pokatop (10574): distraction reason=grace
+11-17 01:48:24.442 D/Pokatop (10574): phase=PAUSED
+## system: face-down detector and activity pause

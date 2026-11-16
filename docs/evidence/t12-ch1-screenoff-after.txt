@@ -1,0 +1,6 @@
+# AFTER: FLAG_KEEP_SCREEN_ON while detection mode is on. Flip from WAITING -> FOCUSING, no pause, no distraction
+## app log (tag Pokatop)
+--------- beginning of main
+11-17 01:48:41.701 D/Pokatop (10859): posture=FACE_DOWN
+11-17 01:48:41.701 D/Pokatop (10859): phase=FOCUSING
+## system: face-down detector and activity pause

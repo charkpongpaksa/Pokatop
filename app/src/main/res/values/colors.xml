@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="pk_bg">#F5FAFE</color>
+    <color name="pk_card">#FFFFFF</color>
+    <color name="pk_surface2">#E3F2FD</color>
+    <color name="pk_pastel">#A7D8F5</color>
+    <color name="pk_navy">#1D3557</color>
+    <color name="pk_text">#1D3557</color>
+    <color name="pk_text2">#56708A</color>
+    <color name="pk_mint">#5FD3B0</color>
+    <color name="pk_on_mint">#06352A</color>
+    <color name="pk_icon_bg">#D4F5EA</color>
+    <color name="pk_logo">#1D3557</color>
+    <color name="pk_btn2_bg">#1D3557</color>
+    <color name="pk_btn2_text">#A7D8F5</color>
+    <color name="pk_stat_bg">#E3F2FD</color>
+</resources>

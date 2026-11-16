@@ -1,0 +1,6 @@
+# AFTER (fix: onPause skips onLeave when isChangingConfigurations): same MainActivityRotationTest
+Starting 1 tests on Pixel_8(AVD) - 17
+Finished 1 tests on Pixel_8(AVD) - 17
+BUILD SUCCESSFUL in 25s
+testcase name="rotatingKeepsSessionWithoutDistraction" classname="com.example.pokatop.ui.MainActivityRotationTest"
+tests="1" failures="0"
